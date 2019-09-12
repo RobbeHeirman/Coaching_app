@@ -1,0 +1,45 @@
+Coaching app-draft
+
+Core:
+- Spelers op veld kunnen zetten (in grid of vrij te kiezen??)
+- Lijnen nodig (dribble, pass, run_line)
+- Door plays and drills in stappen doorstappen
+- Materialen toevoegen
+- Comments per stap (Denken aan integratie mark-up? headers/links...
+- Save, load and export to pdf/print functies als basis IO functies.
+- dus data opslag (JSON, XML??)
+- mouse click driven events (mss ook hotkeys & shortcuts)
+- play trough and step by step play's.
+- Zoek functie, sort functionaliteit (mss net niet meer core)
+
+Opties:
+- Mss share hub? (niet realistisch voor hobby project, servers kosten geld :( )
+- Kalender
+- Aanwezigheidslijsten
+- Stats van spelers
+- Auto data analyse stats spelers
+- Interessant als mobile app?
+
+Users:
+- Enkel coaches, hoe maak ik de interface zo makkelijk mogelijk?
+
+usage:
+- run, pass and dribble lines behoren bij spelers.
+- Spelers behouden al hun info (naam, positie, kleur, looplijnen, heeft de bal?)
+- Mogen objecten op elkaar geplaatst worden?
+- Interactie speler/speler, materiaal/speler, materiaal/materiaal?
+- Zetten van bounds op het veld? (mogen er spelers naast het veld gezet worden)
+- Easy omzetten in pdf om af te drukken, zorg dat trainer volledige voorbereiding kan afdrukken in one go
+- CTRL Z is een persoonlijke must. Duidelijke knop ook nodig om fouten ongedaan te maken.
+- Auto back-up and opslag zou niet zo moeilijk moeten zijn (Via workerthread?)
+
+
+Design patterns:
+- MVC
+- Observer pattern nodig? Change of state in spelers ten opzichte van veld, elkaar?
+- nog geen nut gezien voor factories.
+
+Clear objects
+- Player
+- Line -> pass, dribble, screen
+- Materiaal -> bal, kegel...
